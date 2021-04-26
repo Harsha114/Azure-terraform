@@ -5,8 +5,8 @@ resource "azurerm_resource_group" "example1" {
 
 resource "azurerm_public_ip" "example1" {
   name                = "acceptanceTestPublicIp1"
-  resource_group_name = azurerm_resource_group.example.name
-  location            = azurerm_resource_group.example.location
+  resource_group_name = azurerm_resource_group.example1.name
+  location            = azurerm_resource_group.example1.location
   allocation_method   = "Static"
 
   tags = {
